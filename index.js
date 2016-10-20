@@ -7,7 +7,7 @@ var dataInMemory = [
 	{
 		title: 'The Great Gatsby',
 		slug: 'the-great-gatsby',
-		imageSrc: '',
+		imageSrc: '../images/the-great-gatsby.jpg',
 		authorName: 'F. Scott FitzGerald',
 		description: 'Some guy is after this idiot woman who ignores her kid. Capitalism n that.',
 		numberOfPages: 444
@@ -16,7 +16,7 @@ var dataInMemory = [
 	{
 		title: 'Ulysses',
 		slug: 'ulysses',
-		imageSrc: '',
+		imageSrc: '../images/ulysses.jpg',
 		authorName: 'James Joyce',
 		description: 'Like Homers Iliad, but some guy bumbling around Dublin. Birth of Modernism I think.',
 		numberOfPages: 444
@@ -25,7 +25,7 @@ var dataInMemory = [
 	{
 		title: 'War and Peace',
 		slug: 'war-and-peace',
-		imageSrc: '',
+		imageSrc: '../images/war-and-peace.jpeg',
 		authorName: 'Leo Tolstoy',
 		description: 'Napoleon invades Russia, two friends complain about their wives.',
 		numberOfPages: 444
