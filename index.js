@@ -3,7 +3,6 @@ var pug = require('pug');
 var app = express();
 
 var dataInMemory = [
-
 	{
 		title: 'The Great Gatsby',
 		slug: 'the-great-gatsby',
