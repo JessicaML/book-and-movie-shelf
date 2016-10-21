@@ -9,9 +9,8 @@ html
     hr
     .container
       .row
-        each book in books
+        each film in films
           .col-xs-3
-            a(href="/books/" + book.slug)
-              img(width="225" height="335" src=book.imageSrc)
-            h3= book.title
-    include footer.pug
+            a(href="/films/" + film.slug)
+              img(width="145" height="235" src=film.imageSrc)
+            h3= film.title

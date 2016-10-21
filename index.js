@@ -1,38 +1,22 @@
 var express = require('express');
 var pug = require('pug');
 var app = express();
-
-var dataInMemory = [
-	{
-		title: 'The Great Gatsby',
-		slug: 'the-great-gatsby',
-		imageSrc: '../images/the-great-gatsby.jpg',
-		authorName: 'F. Scott FitzGerald',
-		description: 'Some guy is after this idiot woman who ignores her kid. Capitalism n that.',
-		numberOfPages: 444
-	},
-
-	{
-		title: 'Ulysses',
-		slug: 'ulysses',
-		imageSrc: '../images/ulysses.jpg',
-		authorName: 'James Joyce',
-		description: 'Like Homers Iliad, but some guy bumbling around Dublin. Birth of Modernism I think.',
-		numberOfPages: 444
-	},
-
-	{
-		title: 'War and Peace',
-		slug: 'war-and-peace',
-		imageSrc: '../images/war-and-peace.jpeg',
-		authorName: 'Leo Tolstoy',
-		description: 'Napoleon invades Russia, two friends complain about their wives.',
-		numberOfPages: 444
-	}
-];
+var fs = require('fs');
 
 
-function findBook(slug) {
+var dataInMemory = JSON.parse(fs.readFileSync("filmdata.json").toString())["films"];
+
+
+// var fs = require('fs');
+// var dataInMemory;
+//
+// fs.readFile('filmdata.json', 'utf8', function (err, data) {
+//   if (err) throw err;
+//   dataInMemory = JSON.parse(data);
+// });
+
+
+function findFilm(slug) {
 	for (var i = 0; i < dataInMemory.length; i++) {
 		if (dataInMemory[i].slug === slug) {
 			return dataInMemory[i];
@@ -43,21 +27,21 @@ function findBook(slug) {
 app.use(express.static('public'));
 
 app.get('/', function(request, response) {
-	response.redirect('/books');
+	response.redirect('/films');
 });
 
-app.get('/books', function(req, res) {
-	console.log('Requesting /books');
-	res.send(pug.renderFile('views/index.pug', { books: dataInMemory }));
+app.get('/films', function(req, res) {
+	console.log('Requesting /films');
+	res.send(pug.renderFile('views/index.pug', { films: dataInMemory }));
 });
 
 
-app.get('/books/*', function(req, res) {
-	var foundBook = findBook(req.params[0]);
-	res.send(pug.renderFile('views/book.pug', { book: foundBook }));
+app.get('/films/*', function(req, res) {
+	var foundFilm = findFilm(req.params[0]);
+	res.send(pug.renderFile('views/film.pug', { film: foundFilm }));
 });
 
 
 app.listen(3001, function() {
- console.log('Web server started on port 3000');
+ console.log('Web server started on port 3001');
 });

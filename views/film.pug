@@ -1,0 +1,20 @@
+html
+	head
+		link(rel="stylesheet" href="/css/bootstrap.min.css")
+	body
+		include navbar
+		hr
+		hr
+		hr
+		hr
+
+		.container
+			.row
+				.col-xs-4
+					img(class="img-fluid" width="225" height="335" src=film.imageSrc)
+				.col-xs-8
+					h1= film.title
+					h5 By #{film.director}
+					p= film.description
+					p Made: #{film.yearMade}
+					p Starring: #{film.stars}

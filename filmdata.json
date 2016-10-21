@@ -1,0 +1,33 @@
+{
+"films": [
+	{
+		"title": "Gone with the wind",
+		"slug": "gone-with-the-wind",
+		"imageSrc": "/images/gone_with_the_wind.jpg",
+		"director": "Victor Fleming",
+		"stars": ["Vivien Leigh", "Clark Gable"],
+		"description": "Gone with the Wind is a 1939 American epic historical romance film adapted from Margaret Mitchell's 1936 novel Gone with the Wind. It was produced by David O. Selznick of Selznick International Pictures and directed by Victor Fleming. Set in the American South against the backdrop of the American Civil War and Reconstruction era, the film tells the story of Scarlett O'Hara, the strong-willed daughter of a Georgia plantation owner, from her romantic pursuit of Ashley Wilkes, who is married to his cousin, Melanie Hamilton, to her marriage to Rhett Butler. The leading roles are portrayed by Vivien Leigh (Scarlett), Clark Gable (Rhett), Leslie Howard (Ashley), and Olivia de Havilland (Melanie).",
+		"yearMade": "1939"
+	},
+
+	{
+		"title": "The Battle of Algiers",
+		"slug": "the-battle-of-algiers",
+		"imageSrc": "/images/the_battle_of_algiers.jpg",
+		"director": "Gillo Pontecorvo",
+		"stars": ["Jean Martin", "Saadi Yacef"],
+		"description": "The Battle of Algiers (Italian: La battaglia di Algeri; French: La Bataille d'Alger) is a 1966 Italian-Algerian historical war film co-written and directed by Gillo Pontecorvo and starring Jean Martin and Saadi Yacef. It is based on events during the Algerian War (1954–62) against the French government in North Africa; the most prominent being the titular Battle of Algiers, the capital of Algeria. It was shot on location and the film score was composed by Ennio Morricone. The film, which was shot in a Rossellini-inspired newsreel style—in black and white with documentary-type editing—is often associated with Italian neorealism cinema.",
+		"yearMade": "1966"
+	},
+
+	{
+		"title": "Zoolander",
+		"slug": "zoolander",
+		"imageSrc": "/images/zoolander.jpg",
+		"director": "Ben Stiller",
+		"stars": ["Ben Stiller", "Owen Wilson", "Will Ferrell", "Milla Jovovich"],
+		"description": "Zoolander is a 2001 American comedy film directed by Ben Stiller and starring Stiller, Owen Wilson and Will Ferrell. The film contains elements from a pair of short films directed by Russell Bates and written by Drake Sather and Stiller for the VH1 Fashion Awards television specials in 1996 and 1997. The short films and the film itself feature a dimwitted, narcissistic male model named Derek Zoolander, played by Stiller. The film involves Zoolander becoming the pawn of corrupt fashion executives who are plotting to assassinate the Prime Minister of Malaysia. The name 'Derek Zoolander' was inspired by names of two male models who both worked for Calvin Klein: the Dutchman Mark Vanderloo and the American Johnny Zander.",
+		"yearMade": "2001"
+	}
+]
+}
