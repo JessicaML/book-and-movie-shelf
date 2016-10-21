@@ -8,14 +8,6 @@ html
     hr
     hr
     .container
-      h1 Films
-      .row
-        each film in films
-          .col-xs-3
-            a(href="/films/" + film.slug)
-              img(width="145" height="235" src=film.imageSrc)
-            h3= film.title
-
       h1 Books
       .row
         each book in books
