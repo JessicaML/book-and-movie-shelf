@@ -45,12 +45,12 @@ app.get('/media', function(req, res) {
 
 app.get('/books', function(req, res) {
 	console.log('Requesting /books');
-	res.send(pug.renderFile('views/books.pug', { films: dataFilmInMemory }));
+	res.send(pug.renderFile('views/books.pug', { books: dataFilmInMemory }));
 });
 
 app.get('/films', function(req, res) {
 	console.log('Requesting /films');
-	res.send(pug.renderFile('views/films.pug', { books: dataBookInMemory }));
+	res.send(pug.renderFile('views/films.pug', { films: dataBookInMemory }));
 });
 
 app.get('/films/*', function(req, res) {
